@@ -8,6 +8,21 @@ A minimal CHIP-8 interpreter written in Rust.
 
 Windowing is handled by `winit`, rendering by `pixels` and RNG by `rand`. 
 
+### Building
+  Just run `cargo build --release`
+
+### Usage
+```
+    chip8 [path to rom] [args]
+
+Args:
+    -ob,     --old-behaviour [FX65|FX55|8XY6|8XYE|BNNN|FX1E]     Use older behaviour for given instruction
+    -tt,     --tick-time [number in microseconds]                Sets the minimum time a single tick (instruction loop) takes. This does not affect the timers.
+    -bg,     --bg-color [color code]                             Sets the background color of the emulator. Color code format is RRBBGG (e.g. -bg FFFFFF to set it to white).
+    -fg-off, --fg-off-color [color code]                         Sets the color of "off" pixels (black by default).
+    -fg-on,  --fg-on-color  [color code]                         Sets the color of "on" pixels (white by default).
+```
+
 ### TODO:
 [ ] SCHIP-48 support
 
