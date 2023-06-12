@@ -10,10 +10,15 @@ Windowing is handled by `winit`, rendering by `pixels` and RNG by `rand`.
 
 ### TODO:
 [ ] SCHIP-48 support
+
 [ ] XO-CHIP support
+
 [ ] switch to `softbuffer` for rendering
+
 [ ] config file support
+
 [ ] input remapping
+
 [ ] debug support
 
 ### Credits
